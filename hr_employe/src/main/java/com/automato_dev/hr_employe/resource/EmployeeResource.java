@@ -18,13 +18,13 @@ public class EmployeeResource {
     private EmplolyeeRepository employeeRepository;
 
     @GetMapping
-    public ResponseEntity<?> fetchAllEmplyoees(){
+    public ResponseEntity<Object> fetchAllEmplyoees(){
 
         return ResponseEntity.ok(employeeRepository.findAll());
     }
 
     @GetMapping("{id}")
-    public ResponseEntity<?> fetchEmployeeById(@PathVariable("id") Long id){
+    public ResponseEntity<Object> fetchEmployeeById(@PathVariable("id") Long id){
         
         return ResponseEntity.ok(employeeRepository.findById(id).orElse(new EmployeeEntity()));
        
