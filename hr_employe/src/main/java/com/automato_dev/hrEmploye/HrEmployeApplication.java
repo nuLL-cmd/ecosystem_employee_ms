@@ -1,4 +1,4 @@
-package com.automato_dev.hr_employe;
+package com.automato_dev.hrEmploye;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

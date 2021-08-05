@@ -1,7 +1,9 @@
-﻿package com.automato_dev.hr_employe.resource;
+package com.automato_dev.hrEmploye.resource;
 
-import com.automato_dev.hr_employe.entity.EmployeeEntity;
-import com.automato_dev.hr_employe.repository.EmplolyeeRepository;
+
+
+import com.automato_dev.hrEmploye.entity.EmployeeEntity;
+import com.automato_dev.hrEmploye.repository.EmplolyeeRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

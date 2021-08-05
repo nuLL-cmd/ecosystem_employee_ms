@@ -1,4 +1,4 @@
-﻿package com.automato_dev.hr_payroll.entity;
+package com.automato_dev.hr_payroll.entity;
 
 import java.io.Serializable;
 

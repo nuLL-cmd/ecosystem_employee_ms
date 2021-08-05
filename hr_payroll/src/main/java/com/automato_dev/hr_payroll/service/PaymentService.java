@@ -1,4 +1,4 @@
-﻿package com.automato_dev.hr_payroll.service;
+package com.automato_dev.hr_payroll.service;
 
 import com.automato_dev.hr_payroll.entity.EmployeeEntity;
 import com.automato_dev.hr_payroll.entity.Payment;

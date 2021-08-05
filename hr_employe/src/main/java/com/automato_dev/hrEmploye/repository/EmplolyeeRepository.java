@@ -1,6 +1,7 @@
-﻿package com.automato_dev.hr_employe.repository;
+package com.automato_dev.hrEmploye.repository;
 
-import com.automato_dev.hr_employe.entity.EmployeeEntity;
+
+import com.automato_dev.hrEmploye.entity.EmployeeEntity;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
