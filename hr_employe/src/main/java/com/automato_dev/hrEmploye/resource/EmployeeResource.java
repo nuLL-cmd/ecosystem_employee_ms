@@ -1,7 +1,5 @@
 package com.automato_dev.hrEmploye.resource;
 
-
-
 import com.automato_dev.hrEmploye.entity.EmployeeEntity;
 import com.automato_dev.hrEmploye.repository.EmplolyeeRepository;
 
@@ -18,30 +16,26 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("employees")
 public class EmployeeResource {
-	
-	private static final Logger logger = LoggerFactory.getLogger(EmployeeResource.class);
 
-	
-	@Autowired
-	private Environment env;
-	
-	
+    private static final Logger logger = LoggerFactory.getLogger(EmployeeResource.class);
+
+    @Autowired
+    private Environment env;
+
     @Autowired
     private EmplolyeeRepository employeeRepository;
 
     @GetMapping
-    public ResponseEntity<Object> fetchAllEmplyoees(){
+    public ResponseEntity<Object> fetchAllEmplyoees() {
 
         return ResponseEntity.ok(employeeRepository.findAll());
     }
 
     @GetMapping("{id}")
-    public ResponseEntity<Object> fetchEmployeeById(@PathVariable("id") Long id){
-    	  logger.info("PORTA: "+env.getProperty("local.server.port"));
+    public ResponseEntity<Object> fetchEmployeeById(@PathVariable("id") Long id) {
+        logger.info("PORTA: " + env.getProperty("local.server.port"));
         return ResponseEntity.ok(employeeRepository.findById(id).orElse(new EmployeeEntity()));
-       
+
     }
 
-
-    
 }
