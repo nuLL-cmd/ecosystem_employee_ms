@@ -17,6 +17,10 @@ Tools (until now)
 * Spring Security
 * Spring OAuth2
 * JWT
+* Hystrix (to fault tolerance)
+* Ribbon (to load balance)
+* FeignClient (to comunication between microsservices)
+* EurekaServer / EurekaClient (to managment and routing microsservices and load balance)
 
 Editors
 * Visual Studio Code

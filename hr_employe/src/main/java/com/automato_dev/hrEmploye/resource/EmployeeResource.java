@@ -33,6 +33,14 @@ public class EmployeeResource {
 
     @GetMapping("{id}")
     public ResponseEntity<Object> fetchEmployeeById(@PathVariable("id") Long id) {
+
+        //Simule timout connection to testing hystrix fault config in payment microsservice
+        try{
+            Thread.sleep(500);
+        }catch(InterruptedException e){
+            logger.error("Thread test: ", e);
+        }
+
         logger.info("PORTA: " + env.getProperty("local.server.port"));
         return ResponseEntity.ok(employeeRepository.findById(id).orElse(new EmployeeEntity()));
 
